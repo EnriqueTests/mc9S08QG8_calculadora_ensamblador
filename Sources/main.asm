@@ -65,8 +65,8 @@ _Startup:
 			STA		SOPT1			; Directo, guardar A en SOPT1
 			
 			; Suma
-			MOV		#$00,M60		; Mover a la direccion 60 el valor inmediato 00 en hexadecimal
-			MOV		#$01,M61		; Mover a la direccion 61 el valor inmediato 01 en hexadecimal
+			MOV		#$01,M60		; Mover a la direccion 60 el valor inmediato 01 en hexadecimal
+			MOV		#$19,M61		; Mover a la direccion 61 el valor inmediato 19 en hexadecimal
 			LDA		M60				; Cargar en el acumulador el valor de la direccion 60
 			ADD		M61				; Sumar el acumulador con el valor de la direccion 61
 			STA		M62				; Guardar en la direccion 62 el valor del acumulador
@@ -79,8 +79,8 @@ _Startup:
 			STA		M65				; Guardar en la direccion 65 el valor del acumulador
 			
 			; Multiplicacion
-			MOV		#$06,M66		; Mover a la direccion 66 el valor inmediato 00 en hexadecimal
-			MOV		#$07,M67		; Mover a la direccion 67 el valor inmediato 01 en hexadecimal
+			MOV		#$06,M66		; Mover a la direccion 66 el valor inmediato 06 en hexadecimal
+			MOV		#$1F,M67		; Mover a la direccion 67 el valor inmediato 1F en hexadecimal
 			LDA		M66				; Cargar en el acumulador el valor de la direccion 66
 			LDX 	M67				; Cargar registro X con el valor de la direccion 67
 			MUL						; Multiplicacion de A por X, el byte menos significativo se guarda en el acumulador
