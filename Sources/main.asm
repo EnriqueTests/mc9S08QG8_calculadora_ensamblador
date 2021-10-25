@@ -44,7 +44,7 @@ M68: DS.B   1
 ; Resultado de multiplicacion (byte mas significativo)
 M69: DS.B   1
 
-; Division (detectar 0/0 y x/0)
+; Division (detectar 0/0, 0/x, x/0)
 M6A: DS.B   1
 M6B: DS.B   1
 
